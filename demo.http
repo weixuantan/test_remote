@@ -1,0 +1,29 @@
+POST http://127.0.0.1:5000/employees
+Content-Type: application/json
+
+{
+    "ee_accounts": "202020541",
+    "ee_department": "demo",
+    "ee_name": "王五",
+    "ee_password": "123456",
+    "ee_role": "员工"
+  }
+
+###
+GET http://127.0.0.1:5000/employees
+Accept: application/json
+
+###
+PUT http://127.0.0.1:5000/employees/3
+Content-Type: application/json
+
+{
+    "ee_accounts": "202020541",
+    "ee_department": "demo111",
+    "ee_name": "王五111",
+    "ee_password": "123456",
+    "ee_role": "员工"
+  }
+
+###
+DELETE http://127.0.0.1:5000/employees/3
